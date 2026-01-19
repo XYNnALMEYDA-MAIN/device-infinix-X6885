@@ -40,6 +40,15 @@ BOARD_VENDOR_BOOTIMAGE_PARTITION_SIZE := 67108864
 
 BOARD_MOVE_RECOVERY_RESOURCES_TO_VENDOR_BOOT := true
 AB_OTA_UPDATER := true
+AB_OTA_PARTITIONS += \
+    boot \
+    dtbo \
+    odm \
+    product \
+    system \
+    vbmeta \
+    vendor \
+    vendor_boot
 
 # Dynamic Partitions
 BOARD_SUPER_PARTITION_SIZE := 9126805504

@@ -28,8 +28,8 @@ BOARD_RAMDISK_USE_LZ4 := true
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb
 BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 
-# Vendor Ramdisk (from stock vendor_boot.img)
-BOARD_PREBUILT_VENDOR_RAMDISK := $(DEVICE_PATH)/prebuilt/ramdisk.cpio
+# Vendor Ramdisk configuration moved to recovery/root extraction method
+# BOARD_PREBUILT_VENDOR_RAMDISK := $(DEVICE_PATH)/prebuilt/ramdisk.cpio
 
 BOARD_MKBOOTIMG_ARGS := --header_version $(BOARD_BOOT_HEADER_VERSION) --dtb $(TARGET_PREBUILT_DTB)
 
